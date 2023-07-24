@@ -27,6 +27,7 @@
                         clifford: '#da373d',
                         primary: '#707070',
                         'primary-bg': '#B68C5A',
+                        'gradient-end': 'rgba(17, 17, 17, 0.00)',
                     }
                 }
             }
@@ -47,9 +48,9 @@
 </head>
 
 <body>
-    <header>
-        <!-- navigation bar styles -->
-        <nav class="container mx-auto mt-4 md:mt-12">
+    <header class="container mx-auto ">
+        <!-- navigation bar section -->
+        <nav class="mt-2 md:mt-8">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -88,6 +89,26 @@
                 </div>
             </div>
         </nav>
+
+        <!-- banner section -->
+        <section class="mt-2 md:mt-8">
+            <div class="hero h-auto md:h-[550px]" style="background-image: url('./images/banner.png');">
+                <div class="hero-overlay bg-opacity-60 bg-gradient-to-r from-[#111] to-gradient-end"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-3xl md:text-5xl font-bold font-eb-geramond">We Provide Effective Legal Solutions</h1>
+                        <p class="mb-5 text-sm md:text-base font-poppins">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+                            excepturi
+                            exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <div class="md:flex md:flex-row md:gap-6">
+                            <input type="text" placeholder="Search your services"
+                                class="input input-bordered w-full max-w-xs" />
+                            <button class="btn bg-primary-bg text-white text-sm md:text-lg border-none mt-5 md:mt-0">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
     <main></main>
     <footer></footer>
